@@ -1,0 +1,12 @@
+| API                    | Description                                                                                                                                                 | Version Obsolète       |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+| `@api.model`           | Indique que la méthode est utilisée sur tout le modèle, sans besoin d'un enregistrement spécifique.                                                        | Non obsolète           |
+| `@api.multi`           | Utilisé pour les méthodes qui agissent sur plusieurs enregistrements à la fois. Retiré à partir d'Odoo 14.0.                                                | Odoo 13.0             |
+| `@api.one`             | Indique que la méthode est utilisée sur un seul enregistrement. Retiré à partir d'Odoo 13.0.                                                                 | Odoo 12.0             |
+| `@api.depends`         | Déclare les champs dont dépend un champ calculé, pour mettre à jour automatiquement ce champ en cas de changement.                                          | Non obsolète           |
+| `@api.constrains`      | Spécifie une contrainte de méthode appelée lorsqu'un ou plusieurs champs changent, utilisée pour les validations.                                            | Non obsolète           |
+| `@api.onchange`        | Indique que la méthode est appelée lors du changement de valeur d'un champ, principalement utilisée dans les vues.                                            | Non obsolète           |
+| `@api.model_create_multi` | Indique que la méthode peut créer plusieurs enregistrements en une seule opération.                                                                      | Non obsolète           |
+| `@api.returns`         | Spécifie le type de retour de la méthode, principalement pour la documentation.                                                                          | Non obsolète           |
+| `@api.returns` (nouveau style) | Nouvelle syntaxe pour spécifier le type de retour, plus flexible et explicite.                                                                          | Non obsolète           |
+| `@api.env`             | Permet d'accéder à l'environnement courant, utile pour des opérations contextuelles comme la gestion des utilisateurs ou des entreprises.                 | Non obsolète           |
